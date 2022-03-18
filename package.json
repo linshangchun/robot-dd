@@ -1,0 +1,43 @@
+{
+  "name": "robot-dd",
+  "version": "1.0.2",
+  "description": "钉钉群自定义机器人消息接口全封装",
+  "author": "lshch",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/linshangchun/robot-dd"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "pub:init": "npm publish --registry https://registry.npmjs.org --access=public",
+    "pub": "npm version patch && rollup -c && npm publish --registry https://registry.npmjs.org"
+  },
+  "keywords": [
+    "钉钉机器人",
+    "robot-dd",
+    "robot",
+    "dd",
+    "dingding",
+    "dingtalk"
+  ],
+  "files": [
+    "package.json",
+    "dist"
+  ],
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-external-helpers": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "rollup": "^2.68.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-watch": "^4.3.1"
+  }
+}
