@@ -12,11 +12,11 @@ robot-dd: 钉钉群自定义机器人消息接口全封装
 ```
 npm install robot-dd
 const Robot_DD = require("robot-dd");
-const robotDd = new Robot_DD({
+const robotDD = new Robot_DD({
     access_token: xxxxxx,
     secret: xxxxxx
 });
-const res = await robotDd.sendText({
+const res = await robotDD.sendText({
     text: `time: ${Date.now()}\n 测试钉钉机器人消息发送`,
 });
 if(res.errcode === 0){
@@ -26,10 +26,7 @@ if(res.errcode === 0){
 }
 ```
 
-## 更多接口使用详情可阅源码 => example.md
-
-[example.md](https://github.com/linshangchun/robot-dd/blob/master/example.md)
-
 ## Learn more
 
+[robot-dd 使用示例文档](https://github.com/linshangchun/robot-dd/blob/master/example.md)
 [钉钉群自定义机器人官方文档](https://open.dingtalk.com/document/group/custom-robot-access)
