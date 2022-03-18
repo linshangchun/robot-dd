@@ -1,6 +1,6 @@
 {
   "name": "robot-dd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "钉钉群自定义机器人消息接口全封装",
   "author": "lshch",
   "license": "ISC",
